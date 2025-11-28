@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GBC/static/css/main.a5db232f.css",
+    "main.js": "/GBC/static/js/main.3d28a8d3.js",
+    "index.html": "/GBC/index.html",
+    "main.a5db232f.css.map": "/GBC/static/css/main.a5db232f.css.map",
+    "main.3d28a8d3.js.map": "/GBC/static/js/main.3d28a8d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5db232f.css",
+    "static/js/main.3d28a8d3.js"
+  ]
+}
