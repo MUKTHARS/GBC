@@ -1,8 +1,9 @@
 {
+  "homepage": "https://MUKTHARS.github.io/GBC",
   "name": "construction-website",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://MUKTHARS.github.io/GBC"
+  
 ,
   "dependencies": {
     "crypto-js": "^4.2.0",
