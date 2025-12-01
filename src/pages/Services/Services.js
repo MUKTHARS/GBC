@@ -47,7 +47,7 @@ const Services = () => {
     'Ranco',
     'Dolmia',
     'Ambuja',
-    'Chattinad'
+    'Chettinad'
   ];
 
   const tmtBrands = [
@@ -136,7 +136,7 @@ const Services = () => {
   ];
 
   return (
-    <div className={`container ${isVisible ? 'page-visible' : ''}`}>
+    <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Services Hero Section */}
       <section className="services-hero-section">
         <div className="services-hero-background">

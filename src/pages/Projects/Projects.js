@@ -243,7 +243,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className={`container ${isVisible ? 'page-visible' : ''}`}>
+    <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Projects Hero Section */}
       <section className="projects-hero-section">
         <div className="projects-hero-background">
@@ -317,56 +317,56 @@ const Projects = () => {
                 onClick={() => setActiveProject('all')}
                 className={`filter-card ${activeProject === 'all' ? 'active' : ''}`}
               >
-                <div className="filter-icon">📂</div>
+                <div className="filter-icon">🗁</div>
                 <span>All Projects</span>
               </button>
               <button 
                 onClick={() => setActiveProject('asokapuram')}
                 className={`filter-card ${activeProject === 'asokapuram' ? 'active' : ''}`}
               >
-                <div className="filter-icon">📚</div>
+                <div className="filter-icon">🕮</div>
                 <span>Asokapuram Library</span>
               </button>
               <button 
                 onClick={() => setActiveProject('poonjolai')}
                 className={`filter-card ${activeProject === 'poonjolai' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🌳</div>
+                <div className="filter-icon">𖣂</div>
                 <span>Poonjolai Garden</span>
               </button>
               <button 
                 onClick={() => setActiveProject('vishaka')}
                 className={`filter-card ${activeProject === 'vishaka' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🏠</div>
+                <div className="filter-icon">🏠︎</div>
                 <span>Vishaka Villas</span>
               </button>
               <button 
                 onClick={() => setActiveProject('drainage')}
                 className={`filter-card ${activeProject === 'drainage' ? 'active' : ''}`}
               >
-                <div className="filter-icon">💧</div>
+                <div className="filter-icon">🕳️</div>
                 <span>Drainage Systems</span>
               </button>
               <button 
                 onClick={() => setActiveProject('compound')}
                 className={`filter-card ${activeProject === 'compound' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🧱</div>
+                <div className="filter-icon">┊</div>
                 <span>Compound Walls</span>
               </button>
               <button 
                 onClick={() => setActiveProject('roadmarking')}
                 className={`filter-card ${activeProject === 'roadmarking' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🛣️</div>
+                <div className="filter-icon">〽</div>
                 <span>Road Marking</span>
               </button>
               <button 
                 onClick={() => setActiveProject('colorcode')}
                 className={`filter-card ${activeProject === 'colorcode' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🎨</div>
+                <div className="filter-icon">⚫</div>
                 <span>Color Code</span>
               </button>
             </div>
@@ -379,35 +379,35 @@ const Projects = () => {
                 onClick={() => setActiveOngoingProject('all')}
                 className={`filter-card ${activeOngoingProject === 'all' ? 'active' : ''}`}
               >
-                <div className="filter-icon">📂</div>
+                <div className="filter-icon">🗁</div>
                 <span>All Ongoing</span>
               </button>
               <button 
                 onClick={() => setActiveOngoingProject('pdshop')}
                 className={`filter-card ${activeOngoingProject === 'pdshop' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🏪</div>
+                <div className="filter-icon">🛒</div>
                 <span>PD Shop Vellamdai</span>
               </button>
               <button 
                 onClick={() => setActiveOngoingProject('commercial')}
                 className={`filter-card ${activeOngoingProject === 'commercial' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🏢</div>
+                <div className="filter-icon">𓉱</div>
                 <span>Commercial Complex</span>
               </button>
               <button 
                 onClick={() => setActiveOngoingProject('residential')}
                 className={`filter-card ${activeOngoingProject === 'residential' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🏡</div>
+                <div className="filter-icon">𖠿</div>
                 <span>Residential Layout</span>
               </button>
               <button 
                 onClick={() => setActiveOngoingProject('highway')}
                 className={`filter-card ${activeOngoingProject === 'highway' ? 'active' : ''}`}
               >
-                <div className="filter-icon">🛣️</div>
+                <div className="filter-icon">⛙</div>
                 <span>Highway Extension</span>
               </button>
               <button 
@@ -476,27 +476,27 @@ const Projects = () => {
           </div>
           <div className="areas-showcase-grid">
             <div className="area-showcase-card">
-              <div className="area-icon">📍</div>
+              <div className="area-icon">🏞</div>
               <h4>Mettupalayam</h4>
               <p>Comprehensive construction services</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">🏔️</div>
+              <div className="area-icon">ᨒ</div>
               <h4>Nilgiris</h4>
               <p>Mountain region expertise</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">🏙️</div>
+              <div className="area-icon">✈︎</div>
               <h4>Coimbatore</h4>
               <p>Urban development projects</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">🏭</div>
+              <div className="area-icon">𓍙</div>
               <h4>Erode</h4>
               <p>Industrial infrastructure</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">👕</div>
+              <div className="area-icon">⛫</div>
               <h4>Tiruppur</h4>
               <p>Textile hub development</p>
             </div>

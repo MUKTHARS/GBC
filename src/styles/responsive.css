@@ -181,9 +181,9 @@
   .projects-hero-section,
   .services-hero-section,
   .contact-hero-section {
-    height: auto;
-    min-height: 70vh;
-    padding: 4rem 0;
+    width: 100%;
+  max-width: 100%;
+    
   }
 
   .hero-content-wrapper,

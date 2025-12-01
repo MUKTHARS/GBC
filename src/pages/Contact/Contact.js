@@ -47,7 +47,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className={`container ${isVisible ? 'page-visible' : ''}`}>
+    <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Contact Hero Section */}
       <section className="contact-hero-section">
         <div className="contact-hero-background">
@@ -104,7 +104,7 @@ const Contact = () => {
               {/* Enhanced Phone Numbers */}
               <div className="contact-phone-section-enhanced">
                 <h3 className="contact-section-title">
-                  <span className="contact-icon">📞</span>
+                  <span className="contact-icon"></span>
                   Call Us Directly
                 </h3>
                 <div className="phone-numbers-grid-enhanced">
@@ -115,7 +115,7 @@ const Contact = () => {
                       className="phone-number-enhanced"
                     >
                       <div className="phone-icon-wrapper">
-                        <span className="phone-icon">📱</span>
+                        <span className="phone-icon">☏</span>
                       </div>
                       <div className="phone-content">
                         <span className="phone-number">{phone}</span>
@@ -130,7 +130,7 @@ const Contact = () => {
               {/* Enhanced Business Information */}
               <div className="business-info-section-enhanced">
                 <h3 className="contact-section-title">
-                  <span className="contact-icon">🏢</span>
+                  <span className="contact-icon"></span>
                   Business Information
                 </h3>
                 <div className="business-details-enhanced">
@@ -161,28 +161,28 @@ const Contact = () => {
               {/* Enhanced Service Areas */}
               <div className="service-areas-section-enhanced">
                 <h3 className="contact-section-title">
-                  <span className="contact-icon">📍</span>
+                  <span className="contact-icon"></span>
                   Areas We Serve
                 </h3>
                 <div className="service-areas-grid-enhanced">
                   <div className="service-area-card">
-                    <span className="area-icon">📍</span>
+                    <span className="area-icon">🏞</span>
                     <span className="area-name">Mettupalayam</span>
                   </div>
                   <div className="service-area-card">
-                    <span className="area-icon">🏔️</span>
+                    <span className="area-icon">ᨒ</span>
                     <span className="area-name">Nilgiris</span>
                   </div>
                   <div className="service-area-card">
-                    <span className="area-icon">🏙️</span>
+                    <span className="area-icon">✈︎</span>
                     <span className="area-name">Coimbatore</span>
                   </div>
                   <div className="service-area-card">
-                    <span className="area-icon">🏭</span>
+                    <span className="area-icon">𓍙</span>
                     <span className="area-name">Erode</span>
                   </div>
                   <div className="service-area-card">
-                    <span className="area-icon">👕</span>
+                    <span className="area-icon">⛫</span>
                     <span className="area-name">Tiruppur</span>
                   </div>
                 </div>

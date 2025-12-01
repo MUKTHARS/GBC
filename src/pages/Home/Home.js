@@ -28,7 +28,7 @@ const Home = () => {
   ];
 
   return (
-    <div className={`container ${isVisible ? 'page-visible' : ''}`}>
+    <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Hero Section */}
       <section className="hero-parallax-section">
         {/* <div className="parallax-background">
@@ -52,7 +52,7 @@ const Home = () => {
       <div className="parallax-layer layer-3"></div>
     </div>
   </video>
-  <div className="video-overlay"></div>
+  {/* <div className="video-overlay"></div> */}
 </div>
 
         <div className="hero-content-wrapper">
@@ -125,7 +125,7 @@ const Home = () => {
         <div className="services-showcase-grid">
           <div className="service-showcase-card">
             <div className="service-icon-wrapper">
-              <div className="service-icon">🛣️</div>
+              <div className="service-icon">🛣🏞🗺</div>
               <div className="icon-backdrop"></div>
             </div>
             <h3>Road Construction</h3>
@@ -140,7 +140,7 @@ const Home = () => {
 
           <div className="service-showcase-card">
             <div className="service-icon-wrapper">
-              <div className="service-icon">🏗️</div>
+              <div className="service-icon">🏙</div>
               <div className="icon-backdrop"></div>
             </div>
             <h3>Building Construction</h3>
@@ -155,7 +155,7 @@ const Home = () => {
 
           <div className="service-showcase-card">
             <div className="service-icon-wrapper">
-              <div className="service-icon">📐</div>
+              <div className="service-icon">⊞</div>
               <div className="icon-backdrop"></div>
             </div>
             <h3>Layout Development</h3>
@@ -170,7 +170,7 @@ const Home = () => {
 
           <div className="service-showcase-card">
             <div className="service-icon-wrapper">
-              <div className="service-icon">🚚</div>
+              <div className="service-icon">⛟</div>
               <div className="icon-backdrop"></div>
             </div>
             <h3>Vehicle & Equipment</h3>
@@ -198,7 +198,7 @@ const Home = () => {
           
           <div className="materials-grid">
             <div className="material-category">
-              <h4>🪨 Cement & Concrete</h4>
+              <h4>Cement & Concrete</h4>
               <div className="brands-list">
                 <span>UltraTech Cement</span>
                 <span>ACC Cement</span>
@@ -208,7 +208,7 @@ const Home = () => {
             </div>
             
             <div className="material-category">
-              <h4>⚡ TMT Steel Bars</h4>
+              <h4>TMT Steel Bars</h4>
               <div className="brands-list">
                 <span>SAIL TMT</span>
                 <span>JSW Steel</span>
@@ -218,7 +218,7 @@ const Home = () => {
             </div>
             
             <div className="material-category">
-              <h4>🧱 Construction Materials</h4>
+              <h4>Construction Materials</h4>
               <div className="brands-list">
                 <span>Bricks & Blocks</span>
                 <span>Sand & Aggregates</span>

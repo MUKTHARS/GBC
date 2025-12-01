@@ -42,7 +42,7 @@ const About = () => {
   ];
 
   return (
-    <div className={`container ${isVisible ? 'page-visible' : ''}`}>
+    <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Hero Section */}
       <section className="about-hero-section">
         <div className="about-hero-background">
@@ -89,6 +89,12 @@ const About = () => {
       <section className="about-navigation">
         <div className="nav-tabs">
           <button 
+            className={`nav-tab ${activeTab === 'milestones' ? 'active' : ''}`}
+            onClick={() => setActiveTab('milestones')}
+          >
+            Milestones
+          </button>
+          <button 
             className={`nav-tab ${activeTab === 'story' ? 'active' : ''}`}
             onClick={() => setActiveTab('story')}
           >
@@ -100,12 +106,7 @@ const About = () => {
           >
             Mission & Values
           </button>
-          <button 
-            className={`nav-tab ${activeTab === 'milestones' ? 'active' : ''}`}
-            onClick={() => setActiveTab('milestones')}
-          >
-            Milestones
-          </button>
+          
         </div>
       </section>
 
@@ -123,19 +124,19 @@ const About = () => {
                 
                 <div className="story-highlights">
                   <div className="highlight-card">
-                    <div className="highlight-icon">🏛️</div>
+                    <div className="highlight-icon">📜</div>
                     <h4>Government Approved</h4>
                     <p>Recognized contractor for various government departments including Highways, DRDA, and Municipalities</p>
                   </div>
                   
                   <div className="highlight-card">
-                    <div className="highlight-icon">🛣️</div>
+                    <div className="highlight-icon">ᯓ</div>
                     <h4>Road Construction Experts</h4>
                     <p>Specialized in BT road works with quality approved by state quality monitors</p>
                   </div>
                   
                   <div className="highlight-card">
-                    <div className="highlight-icon">🏗️</div>
+                    <div className="highlight-icon">📑</div>
                     <h4>Multi-Sector Expertise</h4>
                     <p>Comprehensive services from building construction to layout development</p>
                   </div>
@@ -188,15 +189,15 @@ const About = () => {
                   <h4>Certifications & Approvals</h4>
                   <div className="certification-list">
                     <div className="certification-item">
-                      <span className="cert-icon">✅</span>
+                      <span className="cert-icon">ꪜ</span>
                       <span>Government Approved Contractor</span>
                     </div>
                     <div className="certification-item">
-                      <span className="cert-icon">✅</span>
+                      <span className="cert-icon">ꪜ</span>
                       <span>Quality Monitored Projects</span>
                     </div>
                     <div className="certification-item">
-                      <span className="cert-icon">✅</span>
+                      <span className="cert-icon">ꪜ</span>
                       <span>Authorized Material Dealer</span>
                     </div>
                   </div>
