@@ -38,23 +38,22 @@ const Home = () => {
         </div> */}
 
 <div className="video-background">
-    <video 
-      autoPlay 
-      muted 
-      loop 
-      playsInline
-      className="background-video"
-    >
-      <source src="/uploads/mainvdeo.mp4" type="video/mp4" />
-      {/* Fallback for browsers that don't support video */}
-      <div className="video-fallback">
-        <div className="parallax-layer layer-1"></div>
-        <div className="parallax-layer layer-2"></div>
-        <div className="parallax-layer layer-3"></div>
-      </div>
-    </video>
-    <div className="video-overlay"></div>
-  </div>
+  <video 
+    autoPlay 
+    muted 
+    loop 
+    playsInline
+    className="background-video"
+  >
+    <source src="/uploads/mainvdeo.mp4" type="video/mp4" />
+    <div className="video-fallback">
+      <div className="parallax-layer layer-1"></div>
+      <div className="parallax-layer layer-2"></div>
+      <div className="parallax-layer layer-3"></div>
+    </div>
+  </video>
+  <div className="video-overlay"></div>
+</div>
 
         <div className="hero-content-wrapper">
           <div className="hero-main-content">
