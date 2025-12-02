@@ -274,7 +274,7 @@ const About = () => {
               <div 
                 key={index} 
                 className="inspection-card"
-                onClick={() => setSelectedImage(image)}
+                // onClick={() => setSelectedImage(image)}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <img 
@@ -282,12 +282,12 @@ const About = () => {
                   alt={`Quality inspection ${index + 1}`}
                   className="inspection-image"
                 />
-                <div className="inspection-overlay">
+                {/* <div className="inspection-overlay">
                   <div className="inspection-info">
                     <div className="inspection-badge">Government Approved</div>
                     <div className="view-button">View Details</div>
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

@@ -438,7 +438,7 @@ return (
             <div 
               key={index} 
               className="gallery-showcase-item"
-              onClick={() => setSelectedImage(image)}
+              // onClick={() => setSelectedImage(image)}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
@@ -446,9 +446,9 @@ return (
                 alt={`Construction work ${index + 1}`}
                 className="gallery-showcase-image"
               />
-              <div className="gallery-overlay">
+              {/* <div className="gallery-overlay">
                 <div className="zoom-icon">🔍</div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

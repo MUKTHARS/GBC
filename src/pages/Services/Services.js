@@ -343,7 +343,7 @@ const Services = () => {
             <div 
               key={index} 
               className="service-gallery-showcase-item"
-              onClick={() => setSelectedImage(image)}
+              // onClick={() => setSelectedImage(image)}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
@@ -351,9 +351,9 @@ const Services = () => {
                 alt={`Service ${index + 1}`}
                 className="service-gallery-showcase-image"
               />
-              <div className="service-gallery-overlay">
+              {/* <div className="service-gallery-overlay">
                 <div className="zoom-icon">🔍</div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -441,7 +441,7 @@ const Projects = () => {
             <div 
               key={index} 
               className="project-showcase-item"
-              onClick={() => setSelectedImage(image)}
+              // onClick={() => setSelectedImage(image)}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <img 
@@ -450,12 +450,12 @@ const Projects = () => {
                 className="project-showcase-image"
               />
               <div className="project-overlay">
-                <div className="project-info">
+                {/* <div className="project-info">
                   <div className="project-badge">
                     {activeTab === 'completed' ? 'Completed' : 'In Progress'}
                   </div>
                   <div className="view-button">View Details</div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
