@@ -185,50 +185,196 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Premium Materials Section */}
-      <section className="materials-section">
-        <div className="materials-background">
-          <div className="material-overlay"></div>
-        </div>
-        <div className="materials-content">
-          <div className="section-header">
-            <h2 className="section-title">Premium Material Supply</h2>
-            <p className="section-subtitle">Wholesale dealer of quality construction materials</p>
+{/* Premium Materials Section */}
+<section className="materials-section">
+  <div className="materials-background">
+    <div className="material-overlay"></div>
+  </div>
+  <div className="materials-content">
+    <div className="section-header">
+      <h2 className="section-title">Premium Material Supply</h2>
+      <p className="section-subtitle">Wholesale dealer of quality construction materials</p>
+    </div>
+    
+    <div className="materials-grid">
+      <div className="material-category">
+        <div className="material-category-header">
+          <div className="material-icon-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1573766718922-66e78f66b7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Cement" 
+              className="material-icon"
+              loading="lazy"
+            />
           </div>
-          
-          <div className="materials-grid">
-            <div className="material-category">
-              <h4>Cement & Concrete</h4>
-              <div className="brands-list">
-                <span>UltraTech Cement</span>
-                <span>ACC Cement</span>
-                <span>Ambuja Cement</span>
-                <span>Birla Cement</span>
-              </div>
-            </div>
-            
-            <div className="material-category">
-              <h4>TMT Steel Bars</h4>
-              <div className="brands-list">
-                <span>SAIL TMT</span>
-                <span>JSW Steel</span>
-                <span>TATA Tiscon</span>
-                <span>Kamdhenu TMT</span>
-              </div>
-            </div>
-            
-            <div className="material-category">
-              <h4>Construction Materials</h4>
-              <div className="brands-list">
-                <span>Bricks & Blocks</span>
-                <span>Sand & Aggregates</span>
-                <span>RMC Concrete</span>
-                <span>All Construction Needs</span>
-              </div>
-            </div>
+          <h4>Cement & Concrete</h4>
+        </div>
+        <div className="brands-list">
+          <div className="brand-item">
+            <img 
+              src="https://www.ultratechcement.com/assets/images/logo.png" 
+              alt="UltraTech" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1597634285595-d41d7b0d0d79?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>UltraTech Cement</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://www.acclimited.com/static/media/acc.6a33cd4b.svg" 
+              alt="ACC" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1597634285595-d41d7b0d0d79?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>ACC Cement</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://www.ambujacement.com/Content/images/ambuja-logo.png" 
+              alt="Ambuja" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1597634285595-d41d7b0d0d79?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>Ambuja Cement</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Birla_Corporation_Logo.svg/2560px-Birla_Corporation_Logo.svg.png" 
+              alt="Birla" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1597634285595-d41d7b0d0d79?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>Birla Cement</span>
           </div>
         </div>
-      </section>
+      </div>
+      
+      <div className="material-category">
+        <div className="material-category-header">
+          <div className="material-icon-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Steel Bars" 
+              className="material-icon"
+              loading="lazy"
+            />
+          </div>
+          <h4>TMT Steel Bars</h4>
+        </div>
+        <div className="brands-list">
+          <div className="brand-item">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Steel_Authority_of_India_logo.svg/1200px-Steel_Authority_of_India_logo.svg.png" 
+              alt="SAIL" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>SAIL TMT</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://www.jsw.in/sites/all/themes/jsw/images/jsw-steel-logo.png" 
+              alt="JSW" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>JSW Steel</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Tata_Tiscon_logo.svg/2560px-Tata_Tiscon_logo.svg.png" 
+              alt="TATA" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>TATA Tiscon</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kamdhenu_Steel_logo.svg/2560px-Kamdhenu_Steel_logo.svg.png" 
+              alt="Kamdhenu" 
+              className="brand-logo"
+              onError={(e) => {
+                e.target.onerror = null;
+                e.target.src = "https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80";
+              }}
+            />
+            <span>Kamdhenu TMT</span>
+          </div>
+        </div>
+      </div>
+      
+      <div className="material-category">
+        <div className="material-category-header">
+          <div className="material-icon-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              alt="Construction Materials" 
+              className="material-icon"
+              loading="lazy"
+            />
+          </div>
+          <h4>Construction Materials</h4>
+        </div>
+        <div className="brands-list">
+          <div className="brand-item">
+            <img 
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              alt="Bricks" 
+              className="brand-logo"
+            />
+            <span>Bricks & Blocks</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://images.unsplash.com/photo-1564322252871-7e35f9e996b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              alt="Sand" 
+              className="brand-logo"
+            />
+            <span>Sand & Aggregates</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://images.unsplash.com/photo-1598983062497-5d4c797b0234?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              alt="Concrete" 
+              className="brand-logo"
+            />
+            <span>RMC Concrete</span>
+          </div>
+          <div className="brand-item">
+            <img 
+              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              alt="Construction" 
+              className="brand-logo"
+            />
+            <span>All Construction Needs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Enhanced Gallery Section */}
       <section className="gallery-showcase-section">
