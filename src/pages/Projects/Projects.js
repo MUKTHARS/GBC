@@ -258,7 +258,7 @@ const Projects = () => {
             <h1 className="hero-main-title">
               Our <span className="highlight">Portfolio</span> of Excellence
             </h1>
-            <p className="hero-description">
+            <p className="hero-descriptions">
               Discover our journey of transforming landscapes through innovative construction 
               solutions and quality-driven project execution across Tamil Nadu.
             </p>
@@ -290,14 +290,14 @@ const Projects = () => {
             onClick={() => setActiveTab('completed')}
             className={`nav-tab ${activeTab === 'completed' ? 'active' : ''}`}
           >
-            <span className="tab-icon">✅</span>
+            <span className="tab-icon"></span>
             Completed Projects
           </button>
           <button 
             onClick={() => setActiveTab('ongoing')}
             className={`nav-tab ${activeTab === 'ongoing' ? 'active' : ''}`}
           >
-            <span className="tab-icon">🏗️</span>
+            <span className="tab-icon"></span>
             Ongoing Projects
           </button>
         </div>
@@ -311,114 +311,190 @@ const Projects = () => {
           </h3>
           
           {/* Completed Projects Filter */}
-          {activeTab === 'completed' && (
-            <div className="filter-grid">
-              <button 
-                onClick={() => setActiveProject('all')}
-                className={`filter-card ${activeProject === 'all' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🗁</div>
-                <span>All Projects</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('asokapuram')}
-                className={`filter-card ${activeProject === 'asokapuram' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🕮</div>
-                <span>Asokapuram Library</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('poonjolai')}
-                className={`filter-card ${activeProject === 'poonjolai' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">𖣂</div>
-                <span>Poonjolai Garden</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('vishaka')}
-                className={`filter-card ${activeProject === 'vishaka' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🏠︎</div>
-                <span>Vishaka Villas</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('drainage')}
-                className={`filter-card ${activeProject === 'drainage' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🕳️</div>
-                <span>Drainage Systems</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('compound')}
-                className={`filter-card ${activeProject === 'compound' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">┊</div>
-                <span>Compound Walls</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('roadmarking')}
-                className={`filter-card ${activeProject === 'roadmarking' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">〽</div>
-                <span>Road Marking</span>
-              </button>
-              <button 
-                onClick={() => setActiveProject('colorcode')}
-                className={`filter-card ${activeProject === 'colorcode' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">⚫</div>
-                <span>Color Code</span>
-              </button>
-            </div>
-          )}
+{activeTab === 'completed' && (
+  <div className="filter-grid">
+    <button 
+      onClick={() => setActiveProject('all')}
+      className={`filter-card ${activeProject === 'all' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M1.5 1a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+          <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5h-15A.5.5 0 0 1 0 6V4.5zM1.5 4a.5.5 0 0 0-.5.5V5h14v-.5a.5.5 0 0 0-.5-.5h-13z"/>
+          <path d="M0 7.5A1.5 1.5 0 0 1 1.5 6h13A1.5 1.5 0 0 1 16 7.5V9a.5.5 0 0 1-.5.5h-15A.5.5 0 0 1 0 9V7.5z"/>
+        </svg>
+      </div>
+      <span>All Projects</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('asokapuram')}
+      className={`filter-card ${activeProject === 'asokapuram' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M3 2.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5V6H3V2.5zm0 4v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V6.5H3z"/>
+          <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+        </svg>
+      </div>
+      <span>Asokapuram Library</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('poonjolai')}
+      className={`filter-card ${activeProject === 'poonjolai' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 1a.5.5 0 0 1 .5.5V6h-1V1.5A.5.5 0 0 1 8 1zm0 14a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5zM2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z"/>
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0z"/>
+        </svg>
+      </div>
+      <span>Poonjolai Garden</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('vishaka')}
+      className={`filter-card ${activeProject === 'vishaka' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M4 1.5H2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5z"/>
+          <path d="M8 1.5H6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5z"/>
+          <path d="M12 1.5h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5z"/>
+          <path d="M4 7.5H2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5z"/>
+          <path d="M8 7.5H6a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5z"/>
+          <path d="M12 7.5h-2a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5z"/>
+        </svg>
+      </div>
+      <span>Vishaka Villas</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('drainage')}
+      className={`filter-card ${activeProject === 'drainage' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm0 5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 8z"/>
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0z"/>
+        </svg>
+      </div>
+      <span>Drainage Systems</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('compound')}
+      className={`filter-card ${activeProject === 'compound' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2z"/>
+        </svg>
+      </div>
+      <span>Compound Walls</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('roadmarking')}
+      className={`filter-card ${activeProject === 'roadmarking' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8z"/>
+          <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </div>
+      <span>Road Marking</span>
+    </button>
+    <button 
+      onClick={() => setActiveProject('colorcode')}
+      className={`filter-card ${activeProject === 'colorcode' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <circle cx="8" cy="8" r="6"/>
+        </svg>
+      </div>
+      <span>Color Code</span>
+    </button>
+  </div>
+)}
 
-          {/* Ongoing Projects Filter */}
-          {activeTab === 'ongoing' && (
-            <div className="filter-grid">
-              <button 
-                onClick={() => setActiveOngoingProject('all')}
-                className={`filter-card ${activeOngoingProject === 'all' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🗁</div>
-                <span>All Ongoing</span>
-              </button>
-              <button 
-                onClick={() => setActiveOngoingProject('pdshop')}
-                className={`filter-card ${activeOngoingProject === 'pdshop' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🛒</div>
-                <span>PD Shop Vellamdai</span>
-              </button>
-              <button 
-                onClick={() => setActiveOngoingProject('commercial')}
-                className={`filter-card ${activeOngoingProject === 'commercial' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">𓉱</div>
-                <span>Commercial Complex</span>
-              </button>
-              <button 
-                onClick={() => setActiveOngoingProject('residential')}
-                className={`filter-card ${activeOngoingProject === 'residential' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">𖠿</div>
-                <span>Residential Layout</span>
-              </button>
-              <button 
-                onClick={() => setActiveOngoingProject('highway')}
-                className={`filter-card ${activeOngoingProject === 'highway' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">⛙</div>
-                <span>Highway Extension</span>
-              </button>
-              <button 
-                onClick={() => setActiveOngoingProject('industrial')}
-                className={`filter-card ${activeOngoingProject === 'industrial' ? 'active' : ''}`}
-              >
-                <div className="filter-icon">🏭</div>
-                <span>Industrial Road</span>
-              </button>
-            </div>
-          )}
+{/* Ongoing Projects Filter */}
+{activeTab === 'ongoing' && (
+  <div className="filter-grid">
+    <button 
+      onClick={() => setActiveOngoingProject('all')}
+      className={`filter-card ${activeOngoingProject === 'all' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M1.5 1a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+          <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5h-15A.5.5 0 0 1 0 6V4.5zM1.5 4a.5.5 0 0 0-.5.5V5h14v-.5a.5.5 0 0 0-.5-.5h-13z"/>
+          <path d="M0 7.5A1.5 1.5 0 0 1 1.5 6h13A1.5 1.5 0 0 1 16 7.5V9a.5.5 0 0 1-.5.5h-15A.5.5 0 0 1 0 9V7.5z"/>
+        </svg>
+      </div>
+      <span>All Ongoing</span>
+    </button>
+    <button 
+      onClick={() => setActiveOngoingProject('pdshop')}
+      className={`filter-card ${activeOngoingProject === 'pdshop' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2 1a1 1 0 0 0-1 1v2h2V1H2z"/>
+          <path d="M6 1a1 1 0 0 0-1 1v2h2V1H6z"/>
+          <path d="M10 1a1 1 0 0 0-1 1v2h2V1h-1z"/>
+          <path d="M14 1a1 1 0 0 0-1 1v2h2V1h-1z"/>
+          <path d="M1 5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H1z"/>
+        </svg>
+      </div>
+      <span>PD Shop Vellamdai</span>
+    </button>
+    <button 
+      onClick={() => setActiveOngoingProject('commercial')}
+      className={`filter-card ${activeOngoingProject === 'commercial' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm8 0v14h4V1h-4z"/>
+        </svg>
+      </div>
+      <span>Commercial Complex</span>
+    </button>
+    <button 
+      onClick={() => setActiveOngoingProject('residential')}
+      className={`filter-card ${activeOngoingProject === 'residential' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+        </svg>
+      </div>
+      <span>Residential Layout</span>
+    </button>
+    <button 
+      onClick={() => setActiveOngoingProject('highway')}
+      className={`filter-card ${activeOngoingProject === 'highway' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M0 10.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+          <path d="M4 8.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </div>
+      <span>Highway Extension</span>
+    </button>
+    <button 
+      onClick={() => setActiveOngoingProject('industrial')}
+      className={`filter-card ${activeOngoingProject === 'industrial' ? 'active' : ''}`}
+    >
+      <div className="filter-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.5 1a.5.5 0 0 1 .5.5V6h-1V1.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M8 15a.5.5 0 0 1-.5-.5V10h1v4.5a.5.5 0 0 1-.5.5z"/>
+          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z"/>
+        </svg>
+      </div>
+      <span>Industrial Road</span>
+    </button>
+  </div>
+)}
         </div>
       </section>
 
@@ -476,7 +552,7 @@ const Projects = () => {
           </div>
           <div className="areas-showcase-grid">
             <div className="area-showcase-card">
-              <div className="area-icon">🏞</div>
+              <div className="area-icon">⾕</div>
               <h4>Mettupalayam</h4>
               <p>Comprehensive construction services</p>
             </div>
@@ -491,12 +567,12 @@ const Projects = () => {
               <p>Urban development projects</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">𓍙</div>
+              <div className="area-icon">↟</div>
               <h4>Erode</h4>
               <p>Industrial infrastructure</p>
             </div>
             <div className="area-showcase-card">
-              <div className="area-icon">⛫</div>
+              <div className="area-icon">♡</div>
               <h4>Tiruppur</h4>
               <p>Textile hub development</p>
             </div>

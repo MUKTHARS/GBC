@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = process.env.REACT_APP_WHATSAPP_NUMBER || '+1234567890';
+  const phoneNumber = process.env.REACT_APP_WHATSAPP_NUMBER || '+919080402204';
   const message = encodeURIComponent('Hello! I would like to get more information about your construction services.');
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;

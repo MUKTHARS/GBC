@@ -326,6 +326,13 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+.hero-main-title .highlights {
+  background: linear-gradient(135deg, #169e04, #05a402);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero-descriptiona {
   font-size: 1rem;
   margin-bottom: 2.5rem;
@@ -2572,7 +2579,7 @@ body {
 }
 
 .phone-icon-wrapper {
-  background: #dce0e4;
+  background: #050708;
   color: var(--primary-white);
   width: 50px;
   height: 50px;
@@ -2704,7 +2711,7 @@ body {
   padding: 3rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
-  border-right: 6px solid var(--accent-blue);
+  /* border-right: 6px solid var(--accent-blue); */
   height: fit-content;
 }
 
@@ -3824,4 +3831,625 @@ body {
   top: 0;
   left: 0;
   opacity: 0.5 !important;
+}
+
+/* Services page hero background - same style as About page */
+.services-hero-background {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)),
+    url('https://images.unsplash.com/photo-1608501821300-4f99e58bba77?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMHBhdHRlcm58ZW58MHx8MHx8fDA%3D') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hide the gradient overlay for services page */
+.services-hero-section .hero-gradient {
+  display: none !important;
+}
+
+/* Adjust pattern for services page */
+.services-hero-section .hero-pattern {
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%232c3e50" opacity="0.02"><circle cx="50" cy="50" r="2"/></svg>');
+  background-size: 50px 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5 !important;
+}
+
+/* Make text readable over the image */
+.services-hero-content {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.services-hero-section .hero-main-title {
+  color: var(--accent-dark-blue) !important;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8) !important;
+}
+
+.services-hero-section .company-badge span {
+  color: var(--accent-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* .services-hero-section .hero-descriptions {
+  color: var(--accent-dark-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500 !important;
+} */
+
+.services-hero-section .hero-stat .stat-number,
+.services-hero-section .hero-stat .stat-label {
+  color: var(--accent-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+  font-weight: 600 !important;
+}
+
+.projects-hero-background {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)),
+    url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvamVjdCUyMHBvcnRmb2xpb3xlbnwwfHwwfHx8MA%3D%3D') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hide gradient overlay for projects page */
+.projects-hero-section .hero-gradient {
+  display: none !important;
+}
+
+/* Adjust pattern for projects page */
+.projects-hero-section .hero-pattern {
+  opacity: 0.3 !important;
+}
+
+/* Project stats section */
+.hero-stats {
+  position: relative;
+  z-index: 2;
+}
+
+/* Service areas cards with background images */
+.area-showcase-card:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWV0dHVwYWxheWFtfGVufDB8fDB8fHww') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.area-showcase-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlsZ2lyaXN8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.area-showcase-card:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1597040663342-45b6af3d91a5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29pbWJhdG9yZXxlbnwwfHwwfHx8MA%3D%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.area-showcase-card:nth-child(4) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXJvZGV8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.area-showcase-card:nth-child(5) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlydXBwdXJ8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+/* Ensure content stays above background images */
+.area-icon,
+.area-showcase-card h4,
+.area-showcase-card p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Filter cards background */
+.filter-grid {
+  position: relative;
+  z-index: 2;
+}
+
+/* Replace emojis with SVG icons for filter cards - add this to your Projects.js */
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Add hover effects for area cards */
+.area-showcase-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Make text readable over images */
+.area-showcase-card h4 {
+  color: var(--accent-blue) !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+.area-showcase-card p {
+  color: var(--neutral-dark) !important;
+  font-weight: 500 !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Contact page hero background */
+.contact-hero-background {
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)),
+    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydWN0aW9uJTIwdGVhbXxlbnwwfHwwfHx8MA%3D%3D') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hide gradient overlay for contact page */
+.contact-hero-section .hero-gradient {
+  display: none !important;
+}
+
+/* Adjust pattern for contact page */
+.contact-hero-section .hero-pattern {
+  opacity: 0.3 !important;
+}
+
+/* Make text readable over the image */
+.contact-hero-content {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.contact-hero-section .hero-main-title {
+  color: var(--accent-dark-blue) !important;
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.8) !important;
+}
+
+.contact-hero-section .company-badge span {
+  color: var(--accent-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+.contact-hero-section .hero-description {
+  color: var(--accent-dark-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500 !important;
+}
+
+.contact-hero-section .hero-stat .stat-number,
+.contact-hero-section .hero-stat .stat-label {
+  color: var(--accent-blue) !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+  font-weight: 600 !important;
+}
+
+/* Service area cards background images */
+.service-area-card:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWV0dHVwYWxheWFtfGVufDB8fDB8fHww') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.service-area-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmlsZ2lyaXN8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.service-area-card:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1597040663342-45b6af3d91a5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29pbWJhdG9yZXxlbnwwfHwwfHx8MA%3D%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.service-area-card:nth-child(4) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZXJvZGV8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+.service-area-card:nth-child(5) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.9)),
+    /* url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlydXBwdXJ8ZW58MHx8MHx8fDA%3D') !important; */
+  ;background-size: cover !important;
+  background-position: center !important;
+  background-blend-mode: overlay !important;
+}
+
+/* Ensure service area card content stays above background */
+.service-area-card .area-icon,
+.service-area-card .area-name {
+  position: relative;
+  z-index: 2;
+}
+
+/* Add hover effects for service area cards */
+.service-area-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Make text readable in service area cards */
+.service-area-card .area-name {
+  color: var(--accent-blue) !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+.contact-info-card-enhanced {
+  padding: 3rem !important; /* Add proper padding */
+  background: var(--primary-white) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+  height: fit-content !important;
+}
+
+/* Add spacing between sections */
+.contact-phone-section-enhanced {
+  margin-bottom: 3rem !important;
+  padding: 1.5rem 0 !important;
+  border-top: 1px solid var(--primary-gray) !important;
+  border-bottom: 1px solid var(--primary-gray) !important;
+}
+
+.business-info-section-enhanced {
+  margin-bottom: 3rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.service-areas-section-enhanced {
+  margin-bottom: 0 !important;
+  padding-top: 1.5rem !important;
+}
+
+/* Ensure phone numbers don't overflow */
+.phone-numbers-grid-enhanced {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.phone-number-enhanced {
+  padding: 1rem 1.5rem !important;
+  gap: 1rem !important;
+}
+
+/* Make sure text doesn't overflow */
+.phone-content {
+  min-width: 0; /* Allow text wrapping */
+  overflow: hidden;
+}
+
+.phone-number {
+  font-size: 1rem !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Adjust business details spacing */
+.business-detail-item-enhanced {
+  padding: 1rem 0 !important;
+  gap: 1rem !important;
+}
+
+/* Adjust service areas grid */
+.service-areas-grid-enhanced {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1rem !important;
+}
+
+@media (max-width: 1200px) {
+  .contact-grid-enhanced {
+    gap: 2rem !important;
+  }
+  
+  .contact-info-card-enhanced {
+    padding: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-parallax-section,
+  .about-hero-section,
+  .projects-hero-section,
+  .services-hero-section,
+  .contact-hero-section {
+    padding-top: 70px !important;
+    height: auto !important;
+    min-height: 70vh !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .hero-content-wrapper,
+  .about-hero-content,
+  .projects-hero-content,
+  .services-hero-content,
+  .contact-hero-content {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+    gap: 1.5rem !important;
+  }
+
+  .hero-main-title {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-badge,
+  .company-badge {
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-description,
+  .hero-descriptions {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero-stats {
+    margin-top: 1.5rem !important;
+    gap: 1rem !important;
+  }
+
+  /* For contact page specifically */
+  .contact-info-card-enhanced {
+    margin-top: 0 !important;
+  }
+
+  .contact-header {
+    margin-bottom: 2rem !important;
+  }
+
+  /* For services page specifically */
+  .services-hero-section .hero-descriptions {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* For projects page specifically */
+  .projects-navigation {
+    padding: 1.5rem 0 !important;
+  }
+
+  /* For about page specifically */
+  .about-navigation {
+    padding: 1.5rem 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-parallax-section,
+  .about-hero-section,
+  .projects-hero-section,
+  .services-hero-section,
+  .contact-hero-section {
+    min-height: 60vh !important;
+    padding-top: 60px !important;
+  }
+
+  .hero-content-wrapper,
+  .about-hero-content,
+  .projects-hero-content,
+  .services-hero-content,
+  .contact-hero-content {
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .hero-main-title {
+    font-size: 2rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-description,
+  .hero-descriptions {
+    font-size: 1rem !important;
+    margin-bottom: 1.25rem !important;
+  }
+
+  .hero-stats {
+    margin-top: 1.25rem !important;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Fix content-grid layout to prevent overlap */
+  .content-grid {
+    grid-template-columns: 1fr 350px !important; /* Give sidebar fixed width */
+    gap: 3rem !important;
+    align-items: start !important;
+  }
+
+  /* Ensure content-main doesn't overlap sidebar */
+  .content-main {
+    min-width: 0 !important; /* Prevents overflow */
+    overflow: hidden !important;
+  }
+
+  /* Fix expertise section to stay within bounds */
+  .expertise-item {
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+    padding: 0.75rem !important;
+  }
+
+  .expertise-badge {
+    margin: 0.25rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.85rem !important;
+    display: inline-block !important;
+  }
+
+  /* Ensure company-profile-card has proper spacing */
+  .company-profile-card {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Fix certification card spacing */
+  .certification-card {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Add max-height to expertise grid with scroll if needed */
+  .expertise-grid {
+    max-height: 200px !important;
+    overflow-y: auto !important;
+    padding-right: 0.5rem !important;
+  }
+
+  /* Scrollbar styling */
+  .expertise-grid::-webkit-scrollbar {
+    width: 5px !important;
+  }
+
+  .expertise-grid::-webkit-scrollbar-track {
+    background: var(--primary-gray) !important;
+    border-radius: 10px !important;
+  }
+
+  .expertise-grid::-webkit-scrollbar-thumb {
+    background: var(--accent-blue) !important;
+    border-radius: 10px !important;
+  }
+
+  /* Ensure all sidebar content stays in place */
+  .content-sidebar {
+    position: sticky !important;
+    top: 100px !important; /* Adjust based on your header height */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    height: fit-content !important;
+  }
+
+  /* Fix timeline spacing in desktop */
+  .timeline {
+    margin: 3rem auto 0 !important;
+    max-width: 700px !important;
+  }
+
+  .timeline-content {
+    padding: 1.5rem !important;
+  }
+
+  /* Fix quality section grid alignment */
+  .inspection-showcase {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+  }
+}
+
+/* Additional fixes for larger screens */
+@media (min-width: 1200px) {
+  .content-grid {
+    grid-template-columns: 1fr 400px !important;
+    gap: 4rem !important;
+  }
+  
+  .expertise-badge {
+    font-size: 0.9rem !important;
+    padding: 0.6rem 1.2rem !important;
+  }
+}
+
+/* Prevent any horizontal scroll caused by expertise badges */
+.expertise-item {
+  margin-right: 0 !important;
+}
+
+/* Ensure proper text wrapping in all cards */
+.company-profile-card h3,
+.certification-card h4,
+.highlight-card h4 {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Fix profile details alignment */
+.profile-details {
+  gap: 0.75rem !important;
+}
+
+.detail-item {
+  padding: 0.4rem 0 !important;
+}
+
+/* Reduce padding in certification list */
+.certification-list {
+  gap: 0.75rem !important;
+}
+
+.certification-item {
+  padding: 0.75rem !important;
 }
