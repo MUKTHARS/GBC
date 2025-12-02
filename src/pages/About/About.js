@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [activeTab, setActiveTab] = useState('story');
+  const [activeTab, setActiveTab] = useState('milestones');
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -55,9 +55,9 @@ const About = () => {
               <span>Trusted Since 2010</span>
             </div>
             <h1 className="hero-main-title">
-              Building Excellence, <span className="highlight">Creating Legacy</span>
+              Building Excellence, <span className="highlighta">Creating Legacy</span>
             </h1>
-            <p className="hero-description">
+            <p className="hero-descriptiona">
               For over 14 years, Sathguru Balaji Traders has been at the forefront of construction 
               excellence in Tamil Nadu, delivering quality projects that stand the test of time.
             </p>
