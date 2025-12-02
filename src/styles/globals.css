@@ -292,7 +292,7 @@ body {
 
 .hero-badge {
   display: inline-block;
-  background: rgba(7, 76, 224, 0.1);
+  background: #0a0858;
   border: 1px solid rgba(16, 16, 17, 0.521);
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -326,7 +326,7 @@ body {
   margin-bottom: 2.5rem;
   opacity: 0.8;
   line-height: 1.6;
-  color: var(--accent-dark-blue);
+  color: #ffffff;
 }
 
 /* Button Styles */
@@ -350,6 +350,8 @@ body {
   background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-dark-blue) 100%);
   color: var(--primary-white);
   box-shadow: var(--shadow-medium);
+  padding: 3px;
+  border-color:#ffffff00;
 }
 
 .btn-primary:hover {
