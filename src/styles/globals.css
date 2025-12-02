@@ -194,7 +194,7 @@ body {
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-dark-blue) 100%);
+  background: linear-gradient(135deg, #F1BD1E, #F1BD1E 100%);
   color: var(--primary-white);
   padding: 3rem 0 2rem;
   text-align: center;
@@ -586,13 +586,14 @@ body {
 .service-icon-wrapper {
   position: relative;
   margin-bottom: 1.5rem;
+  
 }
 
 .service-icon {
   font-size: 4rem;
   position: relative;
   z-index: 2;
-  color: #2f0670;
+  color: #700647;
 }
 
 .icon-backdrop {
@@ -3696,7 +3697,7 @@ body {
   overflow: hidden;
   background: 
     linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-    url('https://plus.unsplash.com/premium_photo-1675650889045-b63a0ccb8bf9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RlZWwlMjBiYXJ8ZW58MHx8MHx8fDA%3Dhttps://www.shutterstock.com/image-photo/irontmt-rods-loaded-truck-braided-260nw-1210112887.jpg');
+    url('https://plus.unsplash.com/premium_photo-1675650889045-b63a0ccb8bf9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RlZWwlMjBiYXJ8ZW58MHx8MHx8fDA%3D');
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -3711,4 +3712,73 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+}
+
+.service-showcase-card:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(135deg, rgba(52, 39, 146, 0.03) 0%, rgba(241, 189, 30, 0.03) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23342792" opacity="0.05"><path d="M10,10 L90,10 L90,90 L10,90 Z" stroke-width="2" stroke="%23F1BD1E" fill="none"/><line x1="30" y1="30" x2="70" y2="70" stroke-width="1" stroke="%23342792"/><line x1="70" y1="30" x2="30" y2="70" stroke-width="1" stroke="%23342792"/></svg>');
+  background-size: 120px 120px;
+  /* border-left: 4px solid #342792; */
+}
+
+.service-showcase-card:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(135deg, rgba(241, 189, 30, 0.03) 0%, rgba(52, 39, 146, 0.03) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23F1BD1E" opacity="0.05"><rect x="20" y="20" width="20" height="20" rx="3"/><rect x="60" y="20" width="20" height="20" rx="3"/><rect x="20" y="60" width="20" height="20" rx="3"/><rect x="60" y="60" width="20" height="20" rx="3"/></svg>');
+  background-size: 100px 100px;
+  /* border-left: 4px solid #F1BD1E; */
+}
+
+.service-showcase-card:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(135deg, rgba(52, 39, 146, 0.03) 0%, rgba(52, 152, 219, 0.03) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%233498DB" opacity="0.05"><circle cx="30" cy="30" r="10"/><circle cx="70" cy="30" r="10"/><circle cx="30" cy="70" r="10"/><circle cx="70" cy="70" r="10"/><circle cx="50" cy="50" r="8"/></svg>');
+  background-size: 80px 80px;
+  /* border-left: 4px solid #3498db; */
+}
+
+.service-showcase-card:nth-child(4) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(135deg, rgba(241, 189, 30, 0.03) 0%, rgba(46, 204, 113, 0.03) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%232ECC71" opacity="0.05"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30" stroke-width="2" stroke="%23F1BD1E" fill="none"/></svg>');
+  background-size: 110px 110px;
+  /* border-left: 4px solid #2ecc71; */
+}
+
+/* Add subtle hover effects */
+.service-showcase-card:nth-child(1):hover {
+  background: 
+    linear-gradient(135deg, rgba(52, 39, 146, 0.05) 0%, rgba(241, 189, 30, 0.05) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23342792" opacity="0.08"><path d="M10,10 L90,10 L90,90 L10,90 Z" stroke-width="2" stroke="%23F1BD1E" fill="none"/><line x1="30" y1="30" x2="70" y2="70" stroke-width="1" stroke="%23342792"/><line x1="70" y1="30" x2="30" y2="70" stroke-width="1" stroke="%23342792"/></svg>');
+  background-size: 120px 120px;
+}
+
+.service-showcase-card:nth-child(2):hover {
+  background: 
+    linear-gradient(135deg, rgba(241, 189, 30, 0.05) 0%, rgba(52, 39, 146, 0.05) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23F1BD1E" opacity="0.08"><rect x="20" y="20" width="20" height="20" rx="3"/><rect x="60" y="20" width="20" height="20" rx="3"/><rect x="20" y="60" width="20" height="20" rx="3"/><rect x="60" y="60" width="20" height="20" rx="3"/></svg>');
+  background-size: 100px 100px;
+}
+
+.service-showcase-card:nth-child(3):hover {
+  background: 
+    linear-gradient(135deg, rgba(52, 39, 146, 0.05) 0%, rgba(52, 152, 219, 0.05) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%233498DB" opacity="0.08"><circle cx="30" cy="30" r="10"/><circle cx="70" cy="30" r="10"/><circle cx="30" cy="70" r="10"/><circle cx="70" cy="70" r="10"/><circle cx="50" cy="50" r="8"/></svg>');
+  background-size: 80px 80px;
+}
+
+.service-showcase-card:nth-child(4):hover {
+  background: 
+    linear-gradient(135deg, rgba(241, 189, 30, 0.05) 0%, rgba(46, 204, 113, 0.05) 100%),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%232ECC71" opacity="0.08"><polygon points="50,10 90,30 90,70 50,90 10,70 10,30" stroke-width="2" stroke="%23F1BD1E" fill="none"/></svg>');
+  background-size: 110px 110px;
 }
