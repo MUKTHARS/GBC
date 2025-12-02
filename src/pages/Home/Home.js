@@ -1,14 +1,68 @@
 // C:\Users\user.DESKTOP-9V4975E\const\src\pages\Home\Home.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [statsVisible, setStatsVisible] = useState(false);    
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setStatsVisible(true);
+        }
+      });
+    },
+    { threshold: 0.3 } // Trigger when 30% of the element is visible
+  );
 
+  if (statsRef.current) {
+    observer.observe(statsRef.current);
+  }
+
+  return () => {
+    if (statsRef.current) {
+      observer.unobserve(statsRef.current);
+    }
+  };
+}, []);
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+useEffect(() => {
+  if (statsVisible) {
+    const duration = 2000;
+    const steps = 60;
+    const stepDuration = duration / steps;
+    
+    stats.forEach((stat, index) => {
+      const targetNumber = parseInt(stat.number.replace('+', ''));
+      let currentStep = 0;
+      
+      const counter = setInterval(() => {
+        currentStep++;
+        const progress = currentStep / steps;
+        const currentValue = Math.floor(targetNumber * progress);
+        
+        setAnimatedStats(prev => {
+          const newStats = [...prev];
+          newStats[index] = `${currentValue}+`;
+          return newStats;
+        });
+        
+        if (currentStep >= steps) {
+          clearInterval(counter);
+          setAnimatedStats(prev => {
+            const newStats = [...prev];
+            newStats[index] = stat.number;
+            return newStats;
+          });
+        }
+      }, stepDuration);
+    });
+  }
+}, [statsVisible]);
   const homeImages = [
     '/uploads/HOME PAGE/building trust.jpg',
     '/uploads/HOME PAGE/drainage_.jpg',
@@ -26,8 +80,10 @@ const Home = () => {
     { number: '50+', label: 'Team Members' },
     { number: '15+', label: 'Cities Served' }
   ];
+const [animatedStats, setAnimatedStats] = useState(stats.map(() => '0+'));
+const statsRef = useRef(null);
 
-  return (
+return (
     <div className={`container-full ${isVisible ? 'page-visible' : ''}`}>
       {/* Enhanced Hero Section */}
       <section className="hero-parallax-section">
@@ -104,16 +160,16 @@ const Home = () => {
       </section>
 
       {/* Statistics Section */}
-      <section className="stats-section">
-        <div className="stats-container">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-item" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="stat-number">{stat.number}</div>
-              <div className="stat-label">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
+<section className="stats-section" ref={statsRef}>
+  <div className="stats-container">
+    {stats.map((stat, index) => (
+      <div key={index} className="stat-item" style={{ animationDelay: `${index * 0.1}s` }}>
+        <div className="stat-number">{animatedStats[index]}</div>
+        <div className="stat-label">{stat.label}</div>
+      </div>
+    ))}
+  </div>
+</section>
 
       {/* Enhanced Services Overview */}
       <section className="services-showcase-section">
@@ -201,7 +257,7 @@ const Home = () => {
         <div className="material-category-header">
           <div className="material-icon-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1573766718922-66e78f66b7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              src="/uploads/cement.png" 
               alt="Cement" 
               className="material-icon"
               loading="lazy"
@@ -212,7 +268,7 @@ const Home = () => {
         <div className="brands-list">
           <div className="brand-item">
             <img 
-              src="https://www.ultratechcement.com/assets/images/logo.png" 
+              src="/uploads/ultra.jpg" 
               alt="UltraTech" 
               className="brand-logo"
               onError={(e) => {
@@ -224,7 +280,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://www.acclimited.com/static/media/acc.6a33cd4b.svg" 
+              src="/uploads/acc.jpeg" 
               alt="ACC" 
               className="brand-logo"
               onError={(e) => {
@@ -236,7 +292,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://www.ambujacement.com/Content/images/ambuja-logo.png" 
+              src="/uploads/ambuja.png" 
               alt="Ambuja" 
               className="brand-logo"
               onError={(e) => {
@@ -248,7 +304,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Birla_Corporation_Logo.svg/2560px-Birla_Corporation_Logo.svg.png" 
+              src="/uploads/birla.webp" 
               alt="Birla" 
               className="brand-logo"
               onError={(e) => {
@@ -265,7 +321,7 @@ const Home = () => {
         <div className="material-category-header">
           <div className="material-icon-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+              src="/uploads/steel.jpg" 
               alt="Steel Bars" 
               className="material-icon"
               loading="lazy"
@@ -276,7 +332,7 @@ const Home = () => {
         <div className="brands-list">
           <div className="brand-item">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Steel_Authority_of_India_logo.svg/1200px-Steel_Authority_of_India_logo.svg.png" 
+              src="/uploads/sail.jpg" 
               alt="SAIL" 
               className="brand-logo"
               onError={(e) => {
@@ -288,7 +344,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://www.jsw.in/sites/all/themes/jsw/images/jsw-steel-logo.png" 
+              src="/uploads/jswsteel.png" 
               alt="JSW" 
               className="brand-logo"
               onError={(e) => {
@@ -300,7 +356,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Tata_Tiscon_logo.svg/2560px-Tata_Tiscon_logo.svg.png" 
+              src="/uploads/tiscon.png" 
               alt="TATA" 
               className="brand-logo"
               onError={(e) => {
@@ -312,7 +368,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Kamdhenu_Steel_logo.svg/2560px-Kamdhenu_Steel_logo.svg.png" 
+              src="/uploads/kamahenu.jpeg" 
               alt="Kamdhenu" 
               className="brand-logo"
               onError={(e) => {
@@ -340,7 +396,7 @@ const Home = () => {
         <div className="brands-list">
           <div className="brand-item">
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              src="/uploads/bb.jpg" 
               alt="Bricks" 
               className="brand-logo"
             />
@@ -348,7 +404,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://images.unsplash.com/photo-1564322252871-7e35f9e996b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              src="/uploads/sand.jpg" 
               alt="Sand" 
               className="brand-logo"
             />
@@ -356,7 +412,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://images.unsplash.com/photo-1598983062497-5d4c797b0234?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              src="/uploads/rmc.jpg" 
               alt="Concrete" 
               className="brand-logo"
             />
@@ -364,7 +420,7 @@ const Home = () => {
           </div>
           <div className="brand-item">
             <img 
-              src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+              src="/uploads/needs.jpeg" 
               alt="Construction" 
               className="brand-logo"
             />
