@@ -15,7 +15,7 @@ const Header = () => {
        <div 
   className="logo"
   style={{
-    // background: "url('/uploads/2.jpeg') no-repeat center center",
+    background: "url('/uploads/2.jpeg') no-repeat center center",
     backgroundSize: 'contain',
     width: '200px',
     height: '50px'
