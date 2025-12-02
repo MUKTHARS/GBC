@@ -3679,3 +3679,36 @@ body {
     font-size: 0.9rem;
   }
 }
+/* Add live image backgrounds to material cards */
+.material-category:nth-child(1) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://images.unsplash.com/photo-1603983896960-f9be44a5f6a2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dG10fGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.material-category:nth-child(2) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://plus.unsplash.com/premium_photo-1675650889045-b63a0ccb8bf9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3RlZWwlMjBiYXJ8ZW58MHx8MHx8fDA%3D');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.material-category:nth-child(3) {
+  position: relative;
+  overflow: hidden;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+    url('https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uc3RydWN0aW9ufGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
