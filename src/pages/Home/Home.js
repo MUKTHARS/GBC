@@ -124,14 +124,14 @@ return (
               layout planning, and premium material supply across Tamil Nadu.
             </p>
             <div className="hero-actions">
-              <a href="/services" className="btn btn-primary">
+              {/* <a href="/services" className="btn btn-primary">
                 <span>Explore Services</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-              </a>
-              <a href="/contact" className="btn btn-secondary">
-                <span>Get Free Quote</span>
+              </a> */}
+              <a href="/services" className="btn btn-secondary">
+                <span>Explore Services</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2C16.75 2 21 6.25 21 11.5Z" stroke="currentColor" strokeWidth="2"/>
                   <path d="M16 11.5H11.5M11.5 11.5L11.5 7M11.5 11.5L7 11.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -471,7 +471,7 @@ return (
               </svg>
             </a>
             <a href="tel:+919965555652" className="btn btn-large btn-secondary">
-              <span>Call Now: +91 99655 55652</span>
+              <span>Call: +91 99655 55652</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <path d="M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
