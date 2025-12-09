@@ -5,7 +5,9 @@ const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [activeTab, setActiveTab] = useState("milestones");
   const [isVisible, setIsVisible] = useState(false);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     setIsVisible(true);
   }, []);

@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [statsVisible, setStatsVisible] = useState(false);    
+  const [statsVisible, setStatsVisible] = useState(false); 
+  
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   useEffect(() => {
   const observer = new IntersectionObserver(
     (entries) => {

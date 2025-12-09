@@ -7,7 +7,9 @@ const Projects = () => {
   const [activeProject, setActiveProject] = useState('all');
   const [activeOngoingProject, setActiveOngoingProject] = useState('all');
   const [isVisible, setIsVisible] = useState(false);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     setIsVisible(true);
   }, []);

@@ -11,7 +11,9 @@ const Contact = () => {
   });
 
   const [isVisible, setIsVisible] = useState(false);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   useEffect(() => {
     setIsVisible(true);
   }, []);

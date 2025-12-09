@@ -9,7 +9,9 @@ const Services = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   const roadServices = [
     "Layout Development",
     "Arch Construction",
