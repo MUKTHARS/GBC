@@ -4772,3 +4772,46 @@ background-video {
   border-radius: 10px !important;
   display: inline-block !important;
 }
+
+/* Fix section header spacing */
+.section-header {
+    margin-bottom: 3rem !important;
+}
+
+.section-title {
+    margin-bottom: 1rem !important;
+}
+
+.section-subtitle {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .section-header {
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .section-title {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .section-subtitle {
+        margin-top: 0.4rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        margin-bottom: 2rem !important;
+    }
+    
+    .section-title {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .section-subtitle {
+        margin-top: 0.3rem !important;
+    }
+}

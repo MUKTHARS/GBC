@@ -500,7 +500,7 @@ const Projects = () => {
 
       {/* Enhanced Project Gallery */}
       <section className="projects-gallery-section">
-        <div className="gallery-header">
+        <div className="section-header">
           <h2 className="section-title">
             {activeTab === 'completed' ? 'Completed Projects Gallery' : 'Ongoing Projects Gallery'}
           </h2>
