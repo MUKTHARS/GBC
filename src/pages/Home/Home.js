@@ -5,7 +5,7 @@ const handleNavigate = (path) => {
     window.location.href = path;
   } else {
     // For Netlify deployment
-    window.location.href = `/#${path}`;
+    window.location.href = `${path}`;
   }
 };
 const Home = () => {
